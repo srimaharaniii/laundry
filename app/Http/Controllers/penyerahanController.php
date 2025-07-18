@@ -43,8 +43,8 @@ class penyerahanController extends Controller
     {
         // proses tambah
         $penyerahan = new Penyerahan();
-        $penyerahan->pelanggans_id = $request->pelanggan;
-        $penyerahan->jenis_id = $request->jenis;
+        $penyerahan->pelanggans_id = $request->pelanggans_id;
+        $penyerahan->jenis_id = $request->jenis_id;
         $penyerahan->tgl_penyerahan = $request->tgl_penyerahan;
         $penyerahan->tgl_selesai = $request->tgl_selesai;
         $penyerahan->tgl_pengambilan = $request->tgl_pengambilan;

@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('home');
 })->middleware('auth');
 
 Route::get('/home', function () {
