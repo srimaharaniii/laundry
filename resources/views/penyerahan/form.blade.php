@@ -15,7 +15,7 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Nama Pelanggan</label>
-                            <select name="pelanggan" id="" class="form-control">
+                            <select name="nm_pelanggan" id="" class="form-control">
                                 <option value="">-Nama Pelanggan-</option>
                                 @foreach ($pelanggan as $item)
                                     <option value="{{$item->id}}">{{$item->nm_pelanggan}}</option>

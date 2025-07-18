@@ -17,8 +17,11 @@ class penyerahanController extends Controller
     {
         // menampilkan data penyerahan
         $nomor = 1;
-        $penyerahan = Penyerahan::all();
-        return view('penyerahan.index',compact('penyerahan','nomor'));
+        $penyerahan= Penyerahan::all();
+        $pelanggan = Pelanggan::all();
+        $jenis = jenis::all();
+        return view('penyerahan.index',compact('penyerahan','pelanggan','jenis','nomor'));
+
     }
 
     /**
@@ -79,8 +82,8 @@ class penyerahanController extends Controller
     public function update(Request $request, string $id)
     {
         // proses edit
-        $penyerahan = new Penyerahan();
-        $penyerahan->pelanggans_id = $request->pelanggan_id;
+        $penyerahan = Penyerahan::find($id); 
+        $penyerahan->pelanggans_id = $request->pelanggans_id;
         $penyerahan->jenis_id = $request->jenis_id;
         $penyerahan->tgl_penyerahan = $request->tgl_penyerahan;
         $penyerahan->tgl_selesai = $request->tgl_selesai;

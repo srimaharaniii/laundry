@@ -148,7 +148,7 @@
                                         <div class="media">
                                             <img class="d-flex align-self-center img-radius" src="{{ asset('/images/avatar-2.jpg" alt="Generic placeholder image')}}">
                                             <div class="media-body">
-                                                <h5 class="notification-user">John Doe</h5>
+                                                
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
                                                 <span class="notification-time">30 minutes ago</span>
                                             </div>
@@ -292,13 +292,7 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="">
-                                    <a href="{{ url('/pembayaran') }}" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-map-alt"></i><b>M</b></span>
-                                        <span class="pcoded-mtext">Pembayaran</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
+                                
                             </ul>
 
                         </div>

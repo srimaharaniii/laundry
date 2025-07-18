@@ -10,8 +10,8 @@ class Jenis extends Model
     use HasFactory;
     protected $table = 'jenis';
 
-    public function jenis(){
-        return $this->belongTo(jenis::class);
-        
+    public function penyerahans()
+    {
+        return $this->hasOne(Penyerahan::class, 'jenis_id');
     }
 }

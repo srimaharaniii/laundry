@@ -43,7 +43,7 @@
                             @forelse ( $penyerahan as $data)
                                 <tr>
                                     <th scope="row">{{$nomor++}}</th>
-                                    <td>{{$data->pelanggans->nm_pelanggan}}</td>
+                                    <td>{{ $data->pelanggans->nm_pelanggan }}</td>
                                     <td>{{$data->jenis->nm_jenis}}</td>
                                     <td>{{$data->tgl_penyerahan}}</td>
                                     <td>{{$data->tgl_selesai}}</td>
